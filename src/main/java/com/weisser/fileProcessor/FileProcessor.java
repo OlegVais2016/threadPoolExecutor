@@ -21,7 +21,6 @@ public class FileProcessor {
                 Thread.currentThread().interrupt();
             }
         }
-
         // Запускаем обработку файлов в пуле потоков
         while (!queue.isEmpty()) {
             try {
@@ -30,7 +29,6 @@ public class FileProcessor {
                 Thread.currentThread().interrupt();
             }
         }
-
         // Ждем завершения всех задач в пуле потоков
         executor.shutdown();
         try {
