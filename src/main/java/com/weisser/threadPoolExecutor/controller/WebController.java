@@ -29,7 +29,7 @@ public class WebController {
 
         for(Future<String> future: futureList){
             try {
-                msg += future.get() + "#####";
+                msg += future.get() + " FUTURE ";
             } catch (Exception e){}
         }
 
